@@ -1,0 +1,105 @@
+/* --------------------------------contact us--------------- */
+/* .form-group{
+  width: 40rem;
+} */
+#contact-form {
+  border-radius: 5px;
+  position: relative;
+  padding: 450px;
+  height: 2px;
+}
+.form-group {
+  background-color: white;
+  padding: 12px; /*Some padding  */
+  border: 2px solid rgba(204, 204, 204, 0.247); /*Gray border*/
+  border-radius: 4px; /* Rounded borders */
+  /* box-sizing: border-box; Make sure that padding and width stays in place */
+  margin-top: -15px; /*Add a top margin */
+  margin-bottom: 16px; /*Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+#name {
+  color: black;
+  font-size: large;
+}
+#email {
+  color: black;
+  font-size: large;
+}
+#message {
+  color: black;
+  height: 100px;
+  font-size: large;
+}
+.main-contact {
+  background-color: white;
+  /* TO move the entire Box up or down use below */
+  margin-top: -400px;
+  /* opacity:.5; */
+  background-image: url(./img/picture3.jpg);
+  background-position: 0rem;
+  background-repeat: no-repeat;
+}
+.headcontact {
+  font-weight: normal;
+  color: white;
+  margin-top: -2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3f51bf;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact-form {
+    border-radius: 1px;
+    position: relative;
+    /* padding: 40px; */
+    height: 2px;
+    width: auto;
+  }
+  /* For mobile phones: */
+  .form-group {
+    background-color: white;
+    padding: 150px;
+    /* border: 2px solid rgba(204, 204, 204, 0.247); Gray border */
+    /* border-radius: 4px; Rounded borders */
+    /* box-sizing: border-box; Make sure that padding and width stays in place */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5rem;
+    width: auto;
+    /* resize: vertical; */
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  #name {
+    color: black;
+    font-size: small;
+    width: 200px;
+  }
+  #email {
+    color: black;
+    font-size: small;
+    width: 200px;
+  }
+  #message {
+    color: black;
+    height: 100px;
+    font-size: small;
+    width: 200px;
+  }
+  .main-contact {
+    background-color: white;
+    /* TO move the entire Box up or down use below */
+    /* margin-top: -400px; */
+    /* opacity:.5; */
+    background-image: url(./img/picture3.jpg);
+    background-position: 0rem;
+    background-repeat: no-repeat;
+  }
+  .headcontact {
+    font-weight: normal;
+    color: black;
+    /* margin-top: -2.5rem; */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

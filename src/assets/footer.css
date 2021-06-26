@@ -1,0 +1,59 @@
+.sec-5 {
+  width: 100%;
+  background-color: #fff;
+}
+
+.page-footer {
+  background-color: #112d4e !important;
+}
+
+.footer-wrapper {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  display: flex;
+  box-sizing: border-box;
+}
+.footer-container {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.house {
+  cursor: pointer;
+  font-size: 30px;
+  font-family: "Oak", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.house .bg-fill {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+.house text {
+  fill: #333;
+  transition: fill 0.3s ease-in;
+}
+.house:hover .bg-fill,
+.house.active .bg-fill {
+  opacity: 1;
+}
+.house:hover text,
+.house.active text {
+  fill: #333;
+}
+
+@media screen and (max-width: 700px) {
+  .sec-5 {
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 150px !important;
+  }
+  .footer-wrapper {
+    width: 100%;
+    /* background: #e89a3d; */
+    display: flex;
+    box-sizing: border-box;
+  }
+}

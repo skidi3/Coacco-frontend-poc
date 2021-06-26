@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.sec-1 {
+  width: 100%;
+  height: 100vh;
+  background: url(./img/homepage-desk.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.landing-page-heading {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 1000px) {
+  .landing-page-heading {
+    margin-left: 10%;
+  }
+  .search-container {
+    margin-top: 30% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .landing-page-heading {
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 40px;
+  }
+  .search-container {
+    margin-top: 40% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .landing-page-heading {
+    margin-top: 30%;
+    margin-left: 10%;
+    font-size: 30px;
+  }
+  .search-container {
+    margin-top: 60% !important;
+  }
+  .sec-1 {
+    width: 100%;
+    height: 100vh;
+    background: url(./img/homepage-mobile.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+}
+/*Navbar--open*/
+
+#inputColor {
+  background-color: #fffafa;
+}
+
+.nav-wrapper a,
+.nav-list ul a,
+.nav-list .ul li a,
+.brand-logo {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .brand-logo {
+    text-align: center !important;
+    margin: 0 !important;
+  }
+}
+.brand-logo,
+.right {
+  margin: 0 3em;
+}
+
+/*Navbar--close*/
+
+/*SearchBar--open*/
+.search-bar-home {
+  background-color: #fffafa !important;
+}
+.search-icon {
+  margin-right: 93% !important;
+  float: left;
+  color: #343a40 !important;
+}
+
+#search {
+  background-color: #fffafa;
+}
+.search-container {
+  width: 60%;
+  display: block;
+  margin: 200px auto;
+  border-radius: 3px;
+  background-color: #fffafa !important;
+  margin-top: 23%;
+}
+
+@media screen and (max-width: 992px) {
+  .search-container {
+    width: 80%;
+  }
+}
+.search-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: rgb(255, 235, 59);
+  border: 0;
+  color: #343a40;
+  width: 20%;
+  height: inherit;
+  outline: 0;
+  letter-spacing: 0.1;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  font-size: 2rem;
+  height: 100%;
+  border-radius: 0px 3px 0px 0px; /* top left, top right, bottom right, bottom left */
+}
+
+@media screen and (max-width: 700px) {
+  .search-btn {
+    font-size: 1rem;
+  }
+
+  .search-icon {
+    margin-right: 90% !important;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-icon {
+    margin-right: 85% !important;
+    float: left;
+  }
+}
+@media screen and (max-width: 400px) {
+  .search-icon {
+    margin-right: 80% !important;
+    float: left;
+  }
+  .search-btn {
+    font-size: 12px;
+  }
+}
+
+#target {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+}
+
+.overlay-wrapper {
+  width: 80%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.top {
+  width: 100%;
+  height: 50px;
+}
+
+.right-align-close {
+  float: right;
+}
+
+/*search-options-overlay*/
+
+/*Button popular location*/
+.popular-locations {
+  text-align: center;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+.btn--popular-locations {
+  position: relative;
+  display: inline-block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 30px !important;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.btn--popular-locations:hover {
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+.btn--popular-locations:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+}
+.btn--ghost {
+  background-color: transparent !important;
+  border: 1px solid #2196f3;
+  color: #2196f3;
+}
